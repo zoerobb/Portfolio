@@ -1,0 +1,42 @@
+<div class="title">
+<h1>Fulfillment Page</h1>
+<hr />
+</div>
+
+<template id="stationsTemplate">
+    <div class="stationTitle">
+        <h5></h5>
+    </div>
+</template>
+
+<template id="ordersTemplate">
+    <div class="currentOrdersInfo">
+        <div class="currentOrdersRow">
+            <div class="rowItem rowHeader">Quantity</div>
+            <div class="rowItem rowHeader">Item</div>
+            <div class="rowItem rowHeader">Click to Complete</div>
+        </div>
+        <div class="items">
+        </div>
+    </div>
+</template>
+
+<div class="stations">
+    <div id="stationsResults" class="stationsRow">
+    @* JS will put template here *@
+    </div>
+</div>
+
+<div id="stationView" style="display: none;">
+    <div id="stationViewTitle">
+        <h5></h5>
+    </div>
+    <hr />
+    <div id="stationViewContent">
+        <div id="stationOrdersResults">
+            @* JS will put orders here *@
+        </div>
+    </div>
+</div>
+
+<script src="~/js/fulfillmentpage.js" asp-append-version="true"></script>

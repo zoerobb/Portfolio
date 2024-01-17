@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Current Orders";
+}
+
+
+<template id="currentOrdersTemplate">
+    <div class="currentOrdersInfo">
+        <div class="currentOrdersRow">
+            <div class="rowItem rowTitle"></div>
+        </div>
+        <div class="currentOrdersRow">
+            <div class="rowItem rowHeader">Quantity</div>
+            <div class="rowItem rowHeader">Item</div>
+            <div class="rowItem rowHeader">Status</div>
+        </div>
+        <div class="items">
+        </div>
+        <div class="currentOrdersRow">
+            <div class="totalPrice rowItem"></div>
+            <div class="location rowItem"></div>
+        </div>
+    </div>
+</template>
+
+<div class="title">
+<h1>Current Orders</h1>
+<hr />
+</div>
+
+<div id="currentOrdersResults">
+    @* JS will put template here *@
+</div>
+
+<script src="~/js/currentorders.js" asp-append-version="true"></script>
